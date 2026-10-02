@@ -103,10 +103,35 @@ def day(v):
 
 
 REMOTE_WORDS = re.compile(r"remote|anywhere|t[ée]l[ée]travail|work from home|wfh", re.I)
+NOT_REMOTE = re.compile(r"\bhybrid\b|hybride|in[- ]office|on[- ]?site|sur place|en personne", re.I)
+GTA_WORDS = re.compile(
+    r"toronto|mississauga|brampton|markham|vaughan|richmond hill|oakville|burlington|pickering|ajax|whitby"
+    r"|oshawa|milton|scarborough|north york|etobicoke|concord|thornhill|newmarket|aurora|caledon|halton|durham"
+    r"|york region|peel", re.I)
+MTL_WORDS = re.compile(
+    r"montr[ée]al|laval|longueuil|dorval|saint-laurent|st-laurent|pointe-claire|brossard|boucherville|kirkland"
+    r"|lachine|anjou|terrebonne|repentigny|vaudreuil|mirabel|blainville|saint-j[ée]r[ôo]me|st-j[ée]r[ôo]me", re.I)
 
 
 def is_remote(r):
-    return flag(r.get("is_remote")) or bool(REMOTE_WORDS.search(text(r.get("location")) + " " + text(r.get("title"))))
+    # 网站的「远程」筛选不可靠（LinkedIn 会混进 hybrid / on-site），所以看职位本身
+    if REMOTE_WORDS.search(text(r.get("location")) + " " + text(r.get("title"))):
+        return True
+    return flag(r.get("is_remote")) and not NOT_REMOTE.search(text(r.get("description")))
+
+
+def group_of(r, place):
+    """放进哪一组：远程 / 蒙特利尔 / GTA；None = 不要（远程搜索里混进来的、在别的城市的非远程职位）。"""
+    if is_remote(r):
+        return "远程"
+    if not place["remote"]:
+        return place["label"]
+    loc = text(r.get("location"))
+    if MTL_WORDS.search(loc):
+        return "蒙特利尔"
+    if GTA_WORDS.search(loc):
+        return "GTA"
+    return None
 
 
 # ---------------- 法语要求判断 ----------------
@@ -118,9 +143,10 @@ OTHER_LANG = re.compile(r"\b(spanish|mandarin|cantonese|chinese|punjabi|hindi|ur
 FR_ASSET = re.compile(
     r"\b(assets?|preferred|prefer|preferably|nice[\s-]to[\s-]have|a plus|an advantage|advantageous|bonus|desirable|desired"
     r"|considered|atouts?|un plus|souhait\w*|appr[ée]ci\w*|optional|not (?:required|mandatory|necessary|essential))\b", re.I)
-FR_REQUIRED = re.compile(
-    r"\b(required|requirement|must|mandatory|essential|necessary|needs? to|fluen\w*|proficien\w*"
-    r"|requis\w*|exig\w*|obligatoire|indispensable|essentiel\w*|ma[iî]trise)\b", re.I)
+FR_STRICT = re.compile(
+    r"\b(required|requirement|must|mandatory|essential|necessary|needs? to"
+    r"|requis\w*|exig\w*|obligatoire|indispensable|essentiel\w*)\b", re.I)
+FR_SKILL = re.compile(r"\b(fluen\w*|proficien\w*|ma[iî]trise)\b", re.I)
 HEADER_ASSET = re.compile(r"nice[\s-]to[\s-]have|preferred|bonus|\bassets?\b|\bplus\b|atouts?|souhait", re.I)
 HEADER_REQ = re.compile(r"requirement|required|must[\s-]have|exigence|requis|obligatoire", re.I)
 FR_STOP = re.compile(r"\b(les|des|du|une|et|vous|nous|pour|avec|dans|sur|est|sont|votre|notre|aux|le|la)\b", re.I)
@@ -143,11 +169,12 @@ def is_header(line):
 
 
 def french_level(desc):
+    """返回 (等级, 依据)。等级：必须 / 可能要求 / 加分 / 无描述 / 空。"""
     if len(desc) < 80:
-        return "无描述"
+        return "无描述", ""
     if written_in_french(desc):
-        return "必须"  # 整篇都是法语写的职位，基本都要求法语
-    header, found = "", set()
+        return "必须", "整篇职位描述是法语写的"
+    header, found = "", {}
     for line in desc.splitlines():
         if not line.strip():
             continue
@@ -159,18 +186,22 @@ def french_level(desc):
                 continue
             if not FR_NAMED.search(sent) and OTHER_LANG.search(sent):
                 continue  # 说的是别的语言的 bilingual
+            # 顺序很重要：句子里明说加分 > 句子里明说必须 > 在「加分项」标题下 > 只说了 fluent/proficient 或在「要求」标题下
             if FR_ASSET.search(sent):
-                found.add("加分")
-            elif FR_REQUIRED.search(sent) or HEADER_REQ.search(header):
-                found.add("必须")
+                level = "加分"
+            elif FR_STRICT.search(sent):
+                level = "必须"
             elif HEADER_ASSET.search(header):
-                found.add("加分")
+                level = "加分"
+            elif FR_SKILL.search(sent) or HEADER_REQ.search(header):
+                level = "必须"
             else:
-                found.add("可能要求")
+                level = "可能要求"
+            found.setdefault(level, " ".join(sent.split())[:200])
     for level in ("必须", "可能要求", "加分"):
         if level in found:
-            return level
-    return ""
+            return level, found[level]
+    return "", ""
 
 
 # ---------------- 输出 ----------------
@@ -183,9 +214,12 @@ def md_url(u):
     return u.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
 
 
-def write_csv(path, rows):
+DROPPED_FIELDS = ["职位", "公司", "地点", "网站", "依据", "链接"]
+
+
+def write_csv(path, rows, fields=FIELDS):
     with open(path, "w", newline="", encoding="utf-8-sig") as f:
-        w = csv.DictWriter(f, fieldnames=FIELDS)
+        w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         w.writerows(rows)
 
@@ -198,7 +232,7 @@ def write_readme(today, rows, site_count, dropped_french, errors):
         f"每天早上自动抓取过去 {HOURS} 小时内新发布的 DA / QA 职位。地区：远程、蒙特利尔、GTA。",
         "",
         f"**今天共 {len(rows)} 条**（" + " · ".join(f"{k} {len(v)}" for k, v in by_place.items())
-        + f"）。明确要求法语的已去掉 {dropped_french} 条。",
+        + f"）。明确要求法语的已去掉 {dropped_french} 条（[去掉了哪些、根据哪句话](data/french-dropped.csv)）。",
         "",
         "各网站：" + " · ".join(f"{SITE_NAMES[s]} {site_count[s]}" for s in SITES),
     ]
@@ -234,9 +268,8 @@ def write_readme(today, rows, site_count, dropped_french, errors):
 
 def main():
     today = datetime.now(TZ).strftime("%Y-%m-%d")
-    rows, seen, errors = [], set(), []
+    rows, seen, errors, dropped = [], set(), [], []
     site_count = {s: 0 for s in SITES}
-    dropped_french = 0
 
     for place in PLACES:
         for typ, term in TERMS.items():
@@ -253,18 +286,22 @@ def main():
                     url = text(r.get("job_url"))
                     if not url or url in seen:
                         continue  # 同一次抓取里完全相同的链接只留一条
-                    if place["remote"] and site != "linkedin" and not is_remote(r):
-                        continue  # 远程搜索里混进来的非远程职位，留给 GTA / 蒙特利尔那两组
+                    group = group_of(r, place)
+                    if group is None:
+                        continue
                     seen.add(url)
-                    fr = french_level(text(r.get("description")))
+                    fr, why = french_level(text(r.get("description")))
                     if fr == "必须":
-                        dropped_french += 1
+                        dropped.append({
+                            "职位": text(r.get("title")), "公司": text(r.get("company")),
+                            "地点": text(r.get("location")), "网站": SITE_NAMES[site], "依据": why, "链接": url,
+                        })
                         continue
                     site_count[site] += 1
                     rows.append({
                         "发现日期": today,
                         "类型": typ,
-                        "地区": place["label"],
+                        "地区": group,
                         "职位": text(r.get("title")),
                         "公司": text(r.get("company")),
                         "地点": text(r.get("location")),
@@ -286,9 +323,10 @@ def main():
     data.mkdir(exist_ok=True)
     write_csv(data / f"{today}.csv", rows)
     write_csv(data / "latest.csv", rows)
-    write_readme(today, rows, site_count, dropped_french, errors)
+    write_csv(data / "french-dropped.csv", dropped, DROPPED_FIELDS)
+    write_readme(today, rows, site_count, len(dropped), errors)
 
-    print(f"\n共 {len(rows)} 条，去掉要求法语的 {dropped_french} 条，出错 {len(errors)} 次。")
+    print(f"\n共 {len(rows)} 条，去掉要求法语的 {len(dropped)} 条，出错 {len(errors)} 次。")
     for e in errors:
         print("出错：", e)
 

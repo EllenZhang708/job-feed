@@ -1,0 +1,35 @@
+name: 每天抓新职位
+
+on:
+  schedule:
+    - cron: "0 11 * * *"   # 每天 11:00 UTC = 多伦多早上 7 点（冬令时是 6 点）
+  workflow_dispatch: {}     # 在 Actions 页面可以手动点 Run workflow
+
+permissions:
+  contents: write           # 允许把结果存回仓库
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 安装 JobSpy
+        run: pip install -r requirements.txt
+
+      - name: 抓职位
+        run: python scrape.py
+
+      - name: 保存结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data
+          git commit -m "新职位 $(TZ=America/Toronto date +%F)" || echo "没有变化"
+          git push

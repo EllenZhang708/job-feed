@@ -2,7 +2,7 @@ name: 每天抓新职位
 
 on:
   schedule:
-    - cron: "0 11 * * *"   # 每天 11:00 UTC = 多伦多早上 7 点（冬令时是 6 点）
+    - cron: "17 10 * * *"  # 每天 10:17 UTC = 多伦多早上 6:17（冬令时 5:17）。避开整点，GitHub 整点最忙、最容易推迟
   workflow_dispatch: {}     # 在 Actions 页面可以手动点 Run workflow
 
 permissions:

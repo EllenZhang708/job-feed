@@ -9,7 +9,7 @@ import csv
 import math
 import re
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -61,10 +61,14 @@ def fetch(site, term, place):
         kw.update(location=place["location"], hours_old=HOURS,
                   results_wanted=RESULTS_LINKEDIN, linkedin_fetch_description=True)
         if place["remote"]:
-            kw["is_remote"] = True
+            # LinkedIn 不执行「只要远程」筛选，只能在搜索词里加 remote，再看职位描述判断
+            kw["search_term"] = term + " remote"
     elif site == "indeed":
-        # Indeed 不能同时按「发布时间」和「远程」筛选，远程改成在地点里填 Remote
-        kw.update(location="Remote" if place["remote"] else place["location"], hours_old=HOURS)
+        if place["remote"]:
+            # Indeed 的远程筛选可靠，但不能和「发布时间」一起用，日期在 main() 里自己筛
+            kw.update(location="Canada", is_remote=True)
+        else:
+            kw.update(location=place["location"], hours_old=HOURS)
     else:
         kw.update(location=place["location"], hours_old=HOURS)
     df = scrape_jobs(**kw)
@@ -103,7 +107,18 @@ def day(v):
 
 
 REMOTE_WORDS = re.compile(r"remote|anywhere|t[ée]l[ée]travail|work from home|wfh", re.I)
-NOT_REMOTE = re.compile(r"\bhybrid\b|hybride|in[- ]office|on[- ]?site|sur place|en personne", re.I)
+HYBRID_WORDS = re.compile(r"hybrid|hybride", re.I)
+# 职位描述里明确说是远程的说法（只提一句 remote 不算，hybrid 职位也常提 remote）
+STRONG_REMOTE = re.compile(
+    r"fully[- ]remote|100\s?%\s?remote|remote[- ]first|work from anywhere"
+    r"|remote (?:position|role|opportunity|job|work arrangement)"
+    r"|(?:is|be) (?:a )?(?:fully |100% )?remote\b"
+    r"|remote (?:within|in|across|anywhere in) canada|remote\s*[\(\-–,:]\s*canada|canada\s*[\(\-–,:]\s*remote"
+    r"|t[ée]l[ée]travail (?:complet|à 100)|100\s?%\s?(?:en )?t[ée]l[ée]travail|travail (?:enti[èe]rement )?à distance",
+    re.I)
+HYBRID_DESC = re.compile(
+    r"\bhybrid\b|hybride|(?:days?|times?) (?:a|per|each) week (?:in|at|from) (?:the|our|an?) office"
+    r"|in[- ]office (?:days?|presence|requirement)", re.I)
 GTA_WORDS = re.compile(
     r"toronto|mississauga|brampton|markham|vaughan|richmond hill|oakville|burlington|pickering|ajax|whitby"
     r"|oshawa|milton|scarborough|north york|etobicoke|concord|thornhill|newmarket|aurora|caledon|halton|durham"
@@ -113,16 +128,30 @@ MTL_WORDS = re.compile(
     r"|lachine|anjou|terrebonne|repentigny|vaudreuil|mirabel|blainville|saint-j[ée]r[ôo]me|st-j[ée]r[ôo]me", re.I)
 
 
-def is_remote(r):
-    # 网站的「远程」筛选不可靠（LinkedIn 会混进 hybrid / on-site），所以看职位本身
-    if REMOTE_WORDS.search(text(r.get("location")) + " " + text(r.get("title"))):
+def is_remote(r, site):
+    # LinkedIn 的「远程」筛选不起作用，所以除了 Indeed 的远程标记，其他都看职位本身怎么写
+    head = text(r.get("location")) + " " + text(r.get("title"))
+    if HYBRID_WORDS.search(head):
+        return False
+    if REMOTE_WORDS.search(head):
         return True
-    return flag(r.get("is_remote")) and not NOT_REMOTE.search(text(r.get("description")))
+    if site == "indeed" and flag(r.get("is_remote")):
+        return True  # Indeed 的远程标记来自职位属性，可靠
+    desc = text(r.get("description"))
+    return bool(STRONG_REMOTE.search(desc)) and not HYBRID_DESC.search(desc)
 
 
-def group_of(r, place):
+def recent(r):
+    """Indeed 远程搜索没法按发布时间筛，这里只留最近一天多发布的。没有日期的保留。"""
+    d = day(r.get("date_posted"))
+    if not d:
+        return True
+    return d >= (datetime.now(TZ) - timedelta(hours=HOURS + 12)).strftime("%Y-%m-%d")
+
+
+def group_of(r, place, site):
     """放进哪一组：远程 / 蒙特利尔 / GTA；None = 不要（远程搜索里混进来的、在别的城市的非远程职位）。"""
-    if is_remote(r):
+    if is_remote(r, site):
         return "远程"
     if not place["remote"]:
         return place["label"]
@@ -147,6 +176,14 @@ FR_STRICT = re.compile(
     r"\b(required|requirement|must|mandatory|essential|necessary|needs? to"
     r"|requis\w*|exig\w*|obligatoire|indispensable|essentiel\w*)\b", re.I)
 FR_SKILL = re.compile(r"\b(fluen\w*|proficien\w*|ma[iî]trise)\b", re.I)
+FR_MAYBE = re.compile(
+    r"\b(?:may|might|could|can) be required\b|\bdepending on\b|\bselon (?:le|la|les|l['’])|d[ée]pendamment|\bin some cases\b",
+    re.I)
+# 「在魁北克工作的才要求法语」这类条件句
+QC_COND = re.compile(
+    r"(?:located|based|living|residing|situ[ée]e?s?)\s+(?:\S+\s+){0,4}?(?:in|au|en)\s+(?:the province of\s+)?qu[ée]bec"
+    r"|(?:in|au)\s+qu[ée]bec\b", re.I)
+QC_LOC = re.compile(r"\b(?:qc|qu[ée]bec)\b", re.I)
 HEADER_ASSET = re.compile(r"nice[\s-]to[\s-]have|preferred|bonus|\bassets?\b|\bplus\b|atouts?|souhait", re.I)
 HEADER_REQ = re.compile(r"requirement|required|must[\s-]have|exigence|requis|obligatoire", re.I)
 FR_STOP = re.compile(r"\b(les|des|du|une|et|vous|nous|pour|avec|dans|sur|est|sont|votre|notre|aux|le|la)\b", re.I)
@@ -168,12 +205,13 @@ def is_header(line):
     return len(plain) <= 60 and plain.endswith(":") and not s.startswith(("-", "•", "* "))
 
 
-def french_level(desc):
-    """返回 (等级, 依据)。等级：必须 / 可能要求 / 加分 / 无描述 / 空。"""
+def french_level(desc, loc=""):
+    """返回 (等级, 依据)。等级：必须 / 可能要求 / 魁省才要求 / 加分 / 无描述 / 空。"""
     if len(desc) < 80:
         return "无描述", ""
     if written_in_french(desc):
         return "必须", "整篇职位描述是法语写的"
+    in_quebec = bool(QC_LOC.search(loc) or MTL_WORDS.search(loc))
     header, found = "", {}
     for line in desc.splitlines():
         if not line.strip():
@@ -186,9 +224,14 @@ def french_level(desc):
                 continue
             if not FR_NAMED.search(sent) and OTHER_LANG.search(sent):
                 continue  # 说的是别的语言的 bilingual
-            # 顺序很重要：句子里明说加分 > 句子里明说必须 > 在「加分项」标题下 > 只说了 fluent/proficient 或在「要求」标题下
+            # 顺序很重要：句子里明说加分 > 说的是「可能 / 看情况」> 只在魁北克才要求（而这个职位不在魁北克）
+            #            > 句子里明说必须 > 在「加分项」标题下 > 只说了 fluent/proficient 或在「要求」标题下
             if FR_ASSET.search(sent):
                 level = "加分"
+            elif FR_MAYBE.search(sent):
+                level = "可能要求"
+            elif QC_COND.search(sent) and not in_quebec:
+                level = "魁省才要求"
             elif FR_STRICT.search(sent):
                 level = "必须"
             elif HEADER_ASSET.search(header):
@@ -198,7 +241,7 @@ def french_level(desc):
             else:
                 level = "可能要求"
             found.setdefault(level, " ".join(sent.split())[:200])
-    for level in ("必须", "可能要求", "加分"):
+    for level in ("必须", "可能要求", "魁省才要求", "加分"):
         if level in found:
             return level, found[level]
     return "", ""
@@ -241,6 +284,7 @@ def write_readme(today, rows, site_count, dropped_french, errors):
     lines += [
         "",
         "「法语」列：**加分** = 法语是加分项；**可能要求** = 提到了法语，但看不出是不是必须，投之前看一眼；"
+        "**魁省才要求** = 只有在魁北克上班才要求法语，这个职位不在魁北克；"
         "**无描述** = 没抓到职位描述，没法判断。空白 = 没提法语。",
         "",
     ]
@@ -280,17 +324,19 @@ def main():
                     msg = (str(e).splitlines() or [type(e).__name__])[0][:160]
                     errors.append(f"{SITE_NAMES[site]} · {term} · {place['label']}：{msg}")
                     found = []
+                if site == "indeed" and place["remote"]:
+                    found = [r for r in found if recent(r)]
                 print(f"{place['label']}\t{term}\t{site}\t{len(found)}", flush=True)
 
                 for r in found:
                     url = text(r.get("job_url"))
                     if not url or url in seen:
                         continue  # 同一次抓取里完全相同的链接只留一条
-                    group = group_of(r, place)
+                    group = group_of(r, place, site)
                     if group is None:
                         continue
                     seen.add(url)
-                    fr, why = french_level(text(r.get("description")))
+                    fr, why = french_level(text(r.get("description")), text(r.get("location")))
                     if fr == "必须":
                         dropped.append({
                             "职位": text(r.get("title")), "公司": text(r.get("company")),
@@ -305,7 +351,7 @@ def main():
                         "职位": text(r.get("title")),
                         "公司": text(r.get("company")),
                         "地点": text(r.get("location")),
-                        "远程": "是" if is_remote(r) else "",
+                        "远程": "是" if group == "远程" else "",
                         "网站": SITE_NAMES[site],
                         "发布日期": day(r.get("date_posted")),
                         "法语": fr,

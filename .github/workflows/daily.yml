@@ -2,11 +2,20 @@ name: 每天抓新职位
 
 on:
   schedule:
-    - cron: "17 10 * * *"  # 每天 10:17 UTC = 多伦多早上 6:17（冬令时 5:17）。避开整点，GitHub 整点最忙、最容易推迟
-  workflow_dispatch: {}     # 在 Actions 页面可以手动点 Run workflow
+    # GitHub 的免费定时任务经常推迟好几个小时，所以每天设 3 个时间点。
+    # 哪一次先真正运行就由它来抓，后面的发现今天已经抓过了会直接跳过。
+    # UTC 时间；多伦多夏令时是 2:17 / 4:17 / 6:17（冬令时早一小时）。避开整点，整点最忙。
+    - cron: "17 6 * * *"
+    - cron: "17 8 * * *"
+    - cron: "17 10 * * *"
+  workflow_dispatch: {}     # 在 Actions 页面可以手动点 Run workflow，手动运行总是会重新抓
 
 permissions:
   contents: write           # 允许把结果存回仓库
+
+concurrency:
+  group: daily-scrape       # 几次运行撞在一起时排队，一次跑完再跑下一次
+  cancel-in-progress: false
 
 jobs:
   scrape:
@@ -15,18 +24,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: 今天抓过了吗
+        id: done
+        run: |
+          today=$(TZ=America/Toronto date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "data/$today.csv" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "今天（$today）已经抓过了，这次跳过。"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.done.outputs.skip != 'true'
         with:
           python-version: "3.12"
           cache: pip
 
       - name: 安装 JobSpy
+        if: steps.done.outputs.skip != 'true'
         run: pip install -r requirements.txt
 
       - name: 抓职位
+        if: steps.done.outputs.skip != 'true'
         run: python scrape.py
 
       - name: 保存结果
+        if: steps.done.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

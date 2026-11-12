@@ -1,205 +1,201 @@
-# 新职位 · 2026-11-11
+# 新职位 · 2026-11-12
 
 每天早上自动抓取过去 24 小时内新发布的 DA / QA 职位。地区：远程、蒙特利尔、GTA。
 
-**今天共 175 条**（远程 24 · 蒙特利尔 32 · GTA 119）。明确要求法语的已去掉 48 条（[去掉了哪些、根据哪句话](data/french-dropped.csv)）。
+**今天共 171 条**（远程 21 · 蒙特利尔 33 · GTA 117）。明确要求法语的已去掉 72 条（[去掉了哪些、根据哪句话](data/french-dropped.csv)）。
 
-各网站：LinkedIn 144 · Indeed 31 · Glassdoor 0 · Google 0
+各网站：LinkedIn 136 · Indeed 35 · Glassdoor 0 · Google 0
 
 「法语」列：**加分** = 法语是加分项；**可能要求** = 提到了法语，但看不出是不是必须，投之前看一眼；**魁省才要求** = 只有在魁北克上班才要求法语，这个职位不在魁北克；**无描述** = 没抓到职位描述，没法判断。空白 = 没提法语。
 
-## 远程（24）
+## 远程（21）
 
 | 类型 | 职位 | 公司 | 地点 | 网站 | 发布 | 法语 | 链接 |
 |---|---|---|---|---|---|---|---|
-| DA | Senior Revenue Operations Analyst | Jobgether | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488668077) |
-| DA | Staff Decision Scientist, Direct Revenue (AI Native) | Life360 | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489658336) |
-| DA | Business Analytics Manager (Remote) | Forbes Advisor | Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4481788890) |
-| DA | Principal Programmer - RWD/EPI | Jobgether | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488650572) |
-| DA | Senior Manager, Narrative Intelligence | Affirm | Winnipeg, Manitoba, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488640813) |
-| QA | Remote Verification Engineer | ORS Partners | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489000643) |
-| QA | SDET / Automation Tester | Raas Infotek | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489955414) |
-| QA | Software Development Engineer in Test (SDET) | Point | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4471542370) |
-| QA | Staff Quality Engineer (Remote) | Joblet-AI | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489000258) |
-| QA | QA Engineer (Remote) | Joblet-AI | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488697639) |
-| QA | Manual QA Tester (Remote) | Crewlia | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488685575) |
-| QA | Quality Assurance Tester (Remote) | Crewlia | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488679053) |
-| QA | Senior Platform Engineer, Quality Platform | Jobgether | Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488655347) |
-| DA | Strategic Analytics Manager (Marketing Measurement Partner) (Canada) | Thrive Digital | Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489646389) |
-| DA | Delivery Operations Analyst | Cohere | Ottawa, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4480299022) |
-| DA | Delivery Operations Analyst | Cohere | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4480277852) |
+| DA | Jr. Data Analyst | CARDATA | Remote, Canada | Indeed | 2026-11-12 |  | [打开](https://ca.indeed.com/viewjob?jk=db5c9f8b2f06bea9) |
+| DA | Senior Data Analyst | Movable Ink | Calgary, AB, Canada | Indeed | 2026-11-12 |  | [打开](https://ca.indeed.com/viewjob?jk=bed96728cd224969) |
+| QA | Senior Test and Quality Analyst | Jobgether | Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489087604) |
+| QA | Senior Software Development Engineer in Test | Jobgether | Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489057979) |
+| QA | QA Analyst | Tecsys Inc. | Montreal, Quebec, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489076060) |
+| QA | Staff Quality Engineer (Remote) | Joblet-AI | Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489234988) |
+| QA | QA Engineer (Remote) | Joblet-AI | Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489256073) |
+| QA | Manual QA Tester (Remote) | Crewlia | Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489212252) |
+| QA | Quality Assurance Tester (Remote) | Crewlia | Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489204546) |
+| QA | Remote Data Quality Analyst (Italian, Dutch and Nordic languages) | TransPerfect | Alberta, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489090617) |
+| QA | QA Analyst | TECSYS Inc. | Montréal, QC, Canada | Indeed | 2026-11-12 |  | [打开](https://ca.indeed.com/viewjob?jk=dafa5a3032d03c7b) |
+| DA | Senior Data Analyst | Movable Ink | Toronto, ON, Canada | Indeed | 2026-11-12 |  | [打开](https://ca.indeed.com/viewjob?jk=c091a1236a9402e8) |
+| DA | Incentive Operations Analyst | JD Power | Remote, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=23fd1014ffd58b45) |
+| DA | Senior HR Analyst - 12 month contract | Empire Life Insurance | Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=eea6132488d69740) |
+| DA | Senior Data Engineer (Analyst/Scientist) - Remote | Kake | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488264330) |
+| DA | Procurement Finance & Data Analyst | The Moresby Group | Greater Toronto Area, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489008616) |
+| DA | Procurement Finance & Data Associate | STAT | Greater Toronto Area, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489023364) |
 | DA | Executive Compensation Analyst | GE Vernova | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=4f22dddc40f2c67a) |
-| DA | Application Business Analyst, IT Application Management | First National Financial | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=6b1f770eaeb8eb3f) |
 | DA | Senior Quality Assurance Analyst | SMS Equipment Inc. | Acheson, AB, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=682d85fd18f42019) |
+| DA | Application Business Analyst, IT Application Management | First National Financial | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=6b1f770eaeb8eb3f) |
 | DA | Business Analyst II | Empire Life Insurance | Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=f9c32b2e3ff9fbe5) |
-| QA | Software Quality Assurance Tester | Payment Source | Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488608294) |
-| QA | Intermediate Pension Systems Specialist (100% remote) | TELUS Health | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4481724675) |
-| QA | Performance Tester | Tecsys Inc. | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4475480814) |
-| DA | Technical Business Analyst | FONEMED | Remote, Canada | Indeed | 2026-11-09 |  | [打开](https://ca.indeed.com/viewjob?jk=86a63c867396cb97) |
 
-## 蒙特利尔（32）
+## 蒙特利尔（33）
 
 | 类型 | 职位 | 公司 | 地点 | 网站 | 发布 | 法语 | 链接 |
 |---|---|---|---|---|---|---|---|
-| DA | Data Analyst - Python/AI (Hardware Support) | Capgemini | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489668393) |
-| DA | Analyste d'Affaires Finance (Intermédiaire) | SII Canada | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4489694309) |
-| QA | Credit Service Quality Analyst | Fairstone Bank | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 加分 | [打开](https://www.linkedin.com/jobs/view/4480717787) |
-| QA | Responsable des tests et intégration des développements / Development Test & Integration Leader | Airbus Aircraft | Mirabel, Quebec, Canada | LinkedIn | 2026-11-11 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4488213802) |
-| QA | Tests and Validations Specialists | EERS | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4489938490) |
-| QA | eCOA & RTSM Application Specialist-Canada | Indero (formerly Innovaderm) | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4489688415) |
-| QA | Spécialiste Validation | Galderma | Baie-d’Urfé, Quebec, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4455226321) |
-| QA | Junior Integration Engineer - Trading - $80,000-$150,000 CAD + Bonus | Hunter Bond | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4487872447) |
-| DA | Statistician - Medical Research & Development | Alimentiv | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487821645) |
-| QA | Retail QA Analyst | Apex Systems | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489626439) |
-| QA | Quality Assurance Specialist | Haivision | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4478146162) |
-| QA | System Test Engineer | Calian Group | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488392394) |
-| QA | Principal Software Developer | Aspen Technology | Greater Montreal Metropolitan Area | LinkedIn | 2026-11-10 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4478901086) |
-| DA | Lead, Global People Analytics | WSP in Canada | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487853085) |
-| DA | V.I.E – IG Data Analytics H/F – Montréal – 24 mois | BNP Paribas | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4487804877) |
-| DA | Financial Data Analyst | EPITEC | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 | 加分 | [打开](https://www.linkedin.com/jobs/view/4487042189) |
-| DA | Spécialiste S&OP | Labatt Breweries of Canada | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 | 加分 | [打开](https://www.linkedin.com/jobs/view/4489630239) |
-| DA | Data Analyst - Python/AI (Hardware Support) | Capgemini | Montréal, QC, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=da0bd17fbc6111ce) |
-| DA | Software Asset Manager(SAM) & Licensing Analyst | Scalian | Montréal, QC, Canada | Indeed | 2026-11-10 | 加分 | [打开](https://ca.indeed.com/viewjob?jk=c041b064ffa0892f) |
-| QA | Quality Assurance Analyst (COPY) | JobsMedia.io | Laval, Quebec, Canada | LinkedIn | 2026-11-10 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4489607750) |
-| QA | Quality Assurance Analyst (COPY) (COPY) | JobsMedia.io | Longueuil, Quebec, Canada | LinkedIn | 2026-11-10 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4489623366) |
-| QA | Test Software Developer - Embedded Systems | Insight Global | Sainte-Anne-de-Bellevue, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488622184) |
-| QA | Optical Components Test Engineer - Ottawa or Quebec City | Ciena | Greater Montreal Metropolitan Area | LinkedIn | 2026-11-10 | 加分 | [打开](https://www.linkedin.com/jobs/view/4440639407) |
-| QA | Software Reliability Team Lead / Chef(fe) d'équipe, Fiabilité logicielle | Vention | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4476988707) |
-| QA | Embedded Software Developer C++ | Insight Global | Sainte-Anne-de-Bellevue, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488615289) |
-| QA | Analyste principal(e) des systèmes d’affaires numériques – Applications mobiles/Senior Digital Business Systems Analyst, Banking - Mobile Applications | Procom | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488374669) |
-| QA | Analyste en support applicatif de production N2 | Onepoint | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 | 加分 | [打开](https://www.linkedin.com/jobs/view/4487497954) |
-| QA | PLM Functional Analyst - 3DEXPERIENCE | Techso | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4489651592) |
-| QA | Retail BSA | Apex Systems | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489611655) |
-| QA | Business Analyst - Mobile Banking | FP Inc. | Montreal, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489479782) |
-| QA | Team Lead, Quality | Dana Incorporated | Boucherville, Quebec, Canada | LinkedIn | 2026-11-10 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4487832829) |
-| QA | Spécialiste Qualité Interne | Actalent | Longueuil, Quebec, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488634171) |
+| QA | Analyste de test technique principal·e I Technical Test Lead | 2K Vegas | Montreal, Quebec, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4482194759) |
+| DA | Analyste principal(e) en intelligence d’affaires/ Senior Analyst, Business Intelligence (contrat 12 mois) | McKesson | Montreal, Quebec, Canada | LinkedIn | 2026-11-12 | 加分 | [打开](https://www.linkedin.com/jobs/view/4482131547) |
+| DA | Analyst, Risk Analytics & Performance | SS&C Technologies | Westmount, Quebec, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4464690115) |
+| DA | ANALYSTE EN SOLUTIONS TECHNOLOGIQUES ÉMERGENTES | Chrome Technologies | Montreal, Quebec, Canada | LinkedIn | 2026-11-12 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4489214011) |
+| DA | Analyste principal.e, Contrôle des coûts et suivi de la performance financière | CDPQ Infra | Montreal, Quebec, Canada | LinkedIn | 2026-11-12 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4490073545) |
+| QA | Spécialiste Validation / Validation Specialist | Jubilant Pharma Limited | Montreal, Quebec, Canada | LinkedIn | 2026-11-12 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4455977402) |
+| QA | Manager, IT Quality Assurance | BRP | Greater Montreal Metropolitan Area | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4472633428) |
+| QA | Ingénieur Fiabilité Lois de Commandes (Senior) | Groupe SII | Montreal, Quebec, Canada | LinkedIn | 2026-11-12 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4490063610) |
+| QA | AI Product Engineer Internship - Co-op / Work Placement (Montreal based) | Angel Host | Montreal, Quebec, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489062016) |
+| QA | Senior Quality Assurance Analyst | Intelerad | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488251883) |
+| DA | Customer Experience Data Analyst | BRP | Greater Montreal Metropolitan Area | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488226875) |
+| DA | Operations and Financial Coordinator | Marsh Agency | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4490012145) |
+| DA | BI Developer & Data Engineer | Cynet Systems | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489054208) |
+| DA | Compensation Consultant (Senior Associate) | Marsh Agency | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4490008252) |
+| DA | Senior Analyst - Financial Assessment | AtkinsRéalis | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4490002815) |
+| DA | Intern, Laboratory Operations & Continuous Improvement (Winter 2027) | Bombardier | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4482009676) |
+| DA | Analyste FP&A, Ventes / FP&A Analyst, Sales | Nature's Touch Frozen Foods | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4459195505) |
+| DA | Analyste principal(e), Modélisation des produits financiers- FR | La Caisse (Caisse de dépôt et placement du Québec) | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4489014624) |
+| DA | Customer Experience Data Analyst | BRP | Montréal, QC, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=6b3963449821c112) |
+| DA | Data & Triage Analyst | Capgemini | Montréal, QC, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=c4ac95a236c94c17) |
+| QA | Production Quality Coordinator | Safran | Mirabel, Quebec, Canada | LinkedIn | 2026-11-11 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4490050281) |
+| QA | Supply Chain Quality & Process Improvement Consultant | Capgemini Engineering | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4490032962) |
+| QA | MRB Liaison Engineer - Systems | SOGECLAIR | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4455320515) |
+| QA | Senior Advisor, Quality Control | National Bank of Canada | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4488245560) |
+| QA | Application Production Support Analyst | Cynet Systems | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4458981421) |
+| QA | Ingénieur Fiabilité Lois de Commandes (Senior) | SII Canada | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4490002944) |
+| QA | Spécialiste en Intégration des Système Hypersustentateurs / High Lift System Integration Specialist | Airbus Aircraft | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4445526663) |
+| QA | Spécialiste en Intégration des Système Hypersustentateurs / High Lift System Integration Specialist | Airbus | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 | 可能要求 | [打开](https://www.linkedin.com/jobs/view/4447278772) |
+| QA | Responsable d'Acceptation Client / Customer Acceptance Manager | Airbus Aircraft | Montreal, Quebec, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4478948487) |
+| QA | Analyst, Quality Assurance | Bombardier | Dorval, QC, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=3b13aa1ed170a732) |
+| QA | Senior Quality Assurance Analyst | Intelerad | Montréal, QC, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=a1054c7bb6e043ad) |
+| QA | Analyst, Quality Assurance | Bombardier | Dorval, QC, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=6727017e67b06f53) |
+| QA | Quality Control Analyst - Products | Centre de production de produits biologiques (CPPB) Inc. / Biologics Manufacturing Centre (BMC) Inc. | Montréal, QC, Canada | Indeed | 2026-11-11 | 可能要求 | [打开](https://ca.indeed.com/viewjob?jk=0556404ea489b7e0) |
 
-## GTA（119）
+## GTA（117）
 
 | 类型 | 职位 | 公司 | 地点 | 网站 | 发布 | 法语 | 链接 |
 |---|---|---|---|---|---|---|---|
-| DA | Data Scientist II, Marketing | Thumbtack | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489693997) |
-| DA | Go to Market Intelligence Analyst | Euna Solutions | Oakville, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4487845953) |
-| DA | Revenue Operations Analyst | Euna Solutions | Oakville, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4487859299) |
-| DA | Revenue Operations Analyst | Flywheel | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4471926445) |
-| QA | Associate Quality Engineer | Veeva Systems | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4459492044) |
-| QA | RQ11859 - Systems Testing/QA Specialist | CCI- Computer Consultants International, Inc. | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489911568) |
-| QA | RQ11859 – Systems Testing/QA Specialist – Intermediate | S M Software Solutions Inc | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489956316) |
-| QA | Sr. Backend Engineer - Test Automation | eBay | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4478921614) |
-| DA | Business Performance Specialist - Enforcement | City of Mississauga | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4487848997) |
-| DA | Student Analyst, Global Transportation | Apotex Inc. | North York, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489004182) |
-| DA | Sr. Finance Process Excellence & Automation Analyst | Element Fleet Management | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4481738340) |
-| DA | Manager, Digital Analytics & Organic Growth | Holt Renfrew | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4471741828) |
-| DA | Senior Finance Specialist - 12 month contract | Vaco by Highspring | Greater Toronto Area, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4485745175) |
-| DA | CX Strategy & Enablement, Analyst | Interac Corp. | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489677637) |
-| DA | Senior Developer, Business Intelligence | Atlantic Packaging Products Ltd. | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 | 加分 | [打开](https://www.linkedin.com/jobs/view/4480677696) |
-| DA | IT Business Analyst (Finance) | REDPATH MINING | Vaughan, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4412409020) |
-| DA | Supply Chain Analyst (Toronto, Ontario) | Southern Glazer's Wine & Spirits | Etobicoke, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489634003) |
-| DA | Manager, Channel Operations & Planning | Stanley Black & Decker, Inc. | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489671206) |
-| DA | Summer Intern 2027 - Strategy Analyst | Manulife | Toronto, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=02fb39d2a2194fa6) |
-| DA | Junior IT Analyst | WELDCO | Barrie, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=adb717e0ecf234d5) |
-| DA | Lead Business Systems Analyst | RBC | Toronto, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=239ae7625456f257) |
-| DA | Senior Demand Planning Analyst | OSL Retail Services Inc | Mississauga, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=8b336ef306f88ed7) |
-| DA | Business Intelligence Specialist | Conexus Nuclear Inc. | Toronto, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=f65ca04bfdf56ae1) |
-| DA | Business Intelligence Specialist (Contract - 6 months) | Conexus Nuclear Inc. | Toronto, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=95a4ef37e1964288) |
-| QA | Senior QA Engineer | Lorven Technologies Inc. | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488694930) |
-| QA | Test Automation Engineer | Iris Software Inc. | Greater Toronto Area, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4485775028) |
-| QA | Systems Testing/QA Specialist - Intermediate - 859 | I8IS - Infiniti Software Solutions | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488693748) |
-| QA | Quality Assurance Compliance Associate | DECIEM / THE ABNORMAL BEAUTY COMPANY | Etobicoke, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4471230362) |
-| QA | Credit Service Quality Analyst | Fairstone Bank | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 | 加分 | [打开](https://www.linkedin.com/jobs/view/4480720617) |
-| QA | evTOC Applications Engineer | evertz.io | Burlington, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4487868592) |
-| QA | evTOC Applications Engineer | EvertzAV | Burlington, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489911083) |
-| QA | QE Portfolio Specialist | Scotiabank | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4480712778) |
-| QA | Quality Engineer | Intero Integrity | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488696195) |
-| QA | Pharmacovigilance Associate - Markham (Hybrid -12pm-8pm) | Sentrex Health Solutions | Markham, Ontario, Canada | LinkedIn | 2026-11-11 | 加分 | [打开](https://www.linkedin.com/jobs/view/4480739254) |
-| QA | Quality Assurance Engineer | Martinrea International | Brampton, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488670716) |
-| QA | QA Automaton Lead | TEKsystems | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489911392) |
-| QA | Intern, Supply Chain IT Analyst | Saputo Inc. | Georgetown, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489682981) |
-| QA | Intern, Supply Chain IT Analyst | Saputo Inc. | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489682980) |
-| QA | Lead Software Engineer | Virtusa | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4481439461) |
-| QA | QA Manager | SalVentureTech | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488676494) |
-| DA | Data Analyst | Bay Street Staffing | Greater Toronto Area, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4335656746) |
-| DA | Data & Visual Insights Analyst | Fidelity Canada | Mississauga, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4471222434) |
-| DA | Senior Sales Operations Analyst | Canonical | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489646123) |
-| DA | Senior Analyst, Fraud Strategy | Momentum Financial Services Group | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4483777164) |
-| DA | Statistician - Medical Research & Development | Alimentiv | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487816899) |
-| DA | Data Scientist | Kelly | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489623295) |
-| DA | Data Analyst - Utilities | Quantum Technology Recruiting Inc. (QTR) | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489492770) |
-| DA | Business Intelligence Specialist | Conexus Nuclear Inc. (Conexus) | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487830212) |
-| QA | Digital UAT, Menu and Pricing Coordinator | KFC | Vaughan, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487826912) |
-| QA | Senior QA Test Analyst, Assistant Vice President | Citi | Mississauga, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488394620) |
-| QA | QC Analyst (LC-MS/MS and Software Verification) in Concord, ON L4K 4V8, Canada | Select Source International | Concord, Ontario, Canada | LinkedIn | 2026-11-10 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4489488469) |
-| QA | Software Verification Specialist | Apex Systems | Vaughan, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489614644) |
-| QA | Systems Developer (14 Month Contract) | HOOPP (Healthcare of Ontario Pension Plan) | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4481504195) |
-| QA | QA & Automation Engineer | Questrade Financial Group | North York, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487498881) |
-| QA | Software Verification Engineer | Systematix | Vaughan, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488610630) |
-| QA | Automation Tester with (AI, Selenium & Playwright) | Iris Software Inc. | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4488391189) |
-| QA | Senior Analyst, Lending Business Technology | BMO | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489648710) |
-| QA | QA Analyst | Scotiabank | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4480274446) |
-| DA | Data Analyst | York University | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488629364) |
-| DA | Operations Analyst | Hammond Power Solutions | Guelph, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489643764) |
-| DA | People Analytics Specialist | Scarborough Health Network | Scarborough, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487851646) |
-| DA | Senior Research & Data Analyst | Elections Ontario | North York, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487490584) |
-| DA | Manager, Analytics & Metrics | Mastercard | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4478629387) |
-| DA | Anti-Money Laundering Program Manager | Canadian Tire Corporation | Oakville, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489644011) |
-| DA | Lead, Global People Analytics | WSP in Canada | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487845368) |
-| DA | Business Analyst | Belcan | Oakville, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489605809) |
-| DA | Multicultural Growth Analyst | Sysco Canada Inc. | Greater Toronto Area, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488627089) |
-| DA | Senior Treasury Analyst | TD | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489653517) |
-| DA | Senior Analyst, Wealth Data Foundations | BMO | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489636893) |
-| DA | Senior Treasury Asset and Liability Management Analyst | TD | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489656136) |
-| DA | Temporary Reporting Analyst | Halton Catholic District School Board | Burlington, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488611392) |
-| DA | Inventory Analyst | White Cap Canada | Vaughan, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488440988) |
-| DA | Business Analyst, Portfolio Performance | Canada Development Investment Corporation (CDEV) | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 | 加分 | [打开](https://www.linkedin.com/jobs/view/4478476489) |
-| DA | Pricing Analyst | Canpar Express | Brampton, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489627988) |
-| DA | Power BI Developer - Tableau | Zodiac Solutions, Inc | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487815625) |
-| DA | BMO Personal & Business Banking Development Program (New Graduate) - 2 Year Program | BMO | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488198231) |
-| DA | Senior Data Scientist, Strategy & Corporate Development | Questrade Financial Group | North York, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487803693) |
-| DA | Reporting and Data Manager - Enterprise | Turner & Townsend | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4480252839) |
-| DA | Senior Data Solutions Consultant | Klick | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488386985) |
-| DA | Data Solutions Consultant | Klick | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488381252) |
-| DA | Data Scientist | Ontario Securities Commission | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488614356) |
-| DA | Underwriter/ Business Analyst - 12 Month Contract | Munich Re | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 | 加分 | [打开](https://www.linkedin.com/jobs/view/4481246600) |
-| DA | Senior Business Intelligence Developer | Epsilon Solutions Ltd. | Mississauga, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487821491) |
-| DA | Manager, Fundraising Data & Systems | Kids Help Phone | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4484528158) |
-| DA | Senior Manager, Finance | Opendoor | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487823806) |
-| DA | Specialist, Operations and Finance Innovation | EY | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487491905) |
-| DA | Data Analyst | York University | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=3cc5b817956ab088) |
-| DA | Senior Analyst, Wealth Data Foundations | BMO Financial Group | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=4afe992b731142d3) |
-| DA | Analyst, QC Microbiology (12:00 PM - 9:00 PM) | Resilience | Mississauga, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=1b61d693653a0546) |
-| DA | Business Analyst | Meridian Credit Union | St. Catharines, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=c4d7ac0284c051f5) |
-| DA | Senior Treasury Asset and Liability Management Analyst | TD | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=160969b7128a551e) |
-| DA | Analyst, QC Microbiology (6:00 PM - 3:00 AM) | Resilience | Mississauga, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=688631d9a239ae1e) |
-| DA | Inventory Analyst | Chatters Limited Partnership | Mississauga, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=a4962d7f4b353288) |
-| DA | Intern, Supply Chain IT Analyst | Saputo | Georgetown, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=b9232b6208a8ff2f) |
-| DA | Sr. Business Systems Analyst (Credit Cards) | TD | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=77399d7bb4da7396) |
-| DA | Senior Treasury Analyst | TD | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=8867d5d8b48c511f) |
-| DA | Operations Analyst | Hammond Power Solutions | Guelph, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=86165c834b46eedd) |
-| DA | Senior Tax Analyst, Indirect Tax | Lyft | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=04ea60f608c3b9f8) |
-| DA | Supply Chain Analyst (Toronto, Ontario) | Southern Glazer’s Wine & Spirits | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=1ac5e4cf4d95cc27) |
-| DA | Business Analyst, Junior | Linamar | Guelph, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=35c8db90500816dc) |
-| DA | Senior HRIS Analyst | PagerDuty | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=8efc3d600b20ced2) |
-| DA | Senior Risk Analyst | Corpay | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=27dcdcd2a8e573d8) |
-| DA | Senior Technical Support Analyst II , GTB - Scarborough | Scotiabank | Scarborough, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=8c555dfcbc88fe01) |
-| DA | Staff Security Risk Analyst | Okta | Toronto, ON, Canada | Indeed | 2026-11-10 |  | [打开](https://ca.indeed.com/viewjob?jk=f96fa459dfdcbf09) |
-| QA | Senior Specialist, Quality Assurance | Loblaw Companies Limited | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489633877) |
-| QA | QA Associate - On the Floor & Product Release - 12 month contract, Night Shift | Teva Pharmaceuticals | Whitchurch-Stouffville, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488620655) |
-| QA | System Analyst | Bevertec | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489647385) |
-| QA | Automation Lead | J&M Group | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489475986) |
-| QA | Quality Assurance Technologist/Technician (Electronics) | Mirion Technologies | Cambridge, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4481216138) |
-| QA | QA Student Intern | GSK | Mississauga, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4487850130) |
-| QA | Quality Engineer I, QA Systems | Baxter International Inc. | Alliston, Ontario, Canada | LinkedIn | 2026-11-10 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4487806224) |
-| QA | BUSINESS SYSTEMS ANALYST | McMaster University | Hamilton, Ontario, Canada | LinkedIn | 2026-11-10 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4489642037) |
-| QA | Quality Assurance Co-op | Thermo Fisher Scientific | Mississauga, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4478685083) |
-| QA | Senior Systems Testing/QA Specialist | 2iSolutions Inc. | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489613988) |
-| QA | Software Engineer in Test | Dexian | Mississauga, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4483699090) |
-| QA | Associate, Salesforce Support | Apex Systems | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 | 加分 | [打开](https://www.linkedin.com/jobs/view/4489652732) |
-| QA | Senior SDET / Quality Engineering Lead/Architect | Droisys | Brampton, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4488601018) |
-| QA | Automation Test Lead | Themesoft Inc. | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489476822) |
-| QA | Sr. Business Systems Analyst (Credit Cards) | TD | Toronto, Ontario, Canada | LinkedIn | 2026-11-10 |  | [打开](https://www.linkedin.com/jobs/view/4489620096) |
+| QA | Salesforce Quality Analyst Tester | OSI Digital | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4490076753) |
+| QA | Quality Engineering, Specialist | Interac Corp. | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4377992240) |
+| QA | QA/QC Test Analyst | TekStaff IT Solutions | Greater Toronto Area, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4490354170) |
+| QA | Quality Assurance Engineer Co-op Student (4-month contract) | Foresters Financial | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4471747943) |
+| QA | RQ11881 – Systems Testing/QA Specialist – Senior | S M Software Solutions Inc | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4490340862) |
+| QA | RQ11880 – Systems Testing/QA Specialist – Senior | S M Software Solutions Inc | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4490343660) |
+| DA | ADG Senior Analyst - Data+Power BI | Essex Lake Group | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4484821009) |
+| DA | Senior Data Analyst | Movable Ink | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489239888) |
+| DA | Senior Business Intelligence Specialist | Ryan Specialty | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4479434206) |
+| DA | Data Analyst | Bondi Produce and Specialty Foods | Greater Toronto Area, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489064456) |
+| DA | Senior Analyst, Ecommerce & Digital | Rogers Sports & Media | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4484850549) |
+| DA | Senior Analyst, Business Intelligence Systems | Scotiabank | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4481157431) |
+| DA | Business Analyst/Data Visualization | Virtusa | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4483086717) |
+| DA | Data Analyst | Insight Global | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489249680) |
+| DA | Senior Analyst, Business Intelligence (12 month Contract) | McKesson | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 | 加分 | [打开](https://www.linkedin.com/jobs/view/4482122742) |
+| DA | Commercial Performance Analyst | Diageo | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4473043032) |
+| DA | Optical Supply Chain Analyst | Hoya Vision Care | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4481159168) |
+| DA | Product Analyst | Echelon Insurance | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4426402731) |
+| DA | Procurement and Performance Analyst | The Miller Group | Markham, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4490357214) |
+| DA | Senior Analyst, Commercial - Sparkling | Coca-Cola Canada Bottling Limited | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4488264683) |
+| DA | Analyst, Risk Analytics & Performance | SS&C Technologies | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4464695051) |
+| DA | Data Management Analyst (12-Month Fixed Term) | CAAT Pension Plan | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4481166945) |
+| DA | Workforce Capacity Planning Analyst | Sunlife | North York, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489058451) |
+| DA | Student Intern, SCM Data Analyst | Celestica | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4481166367) |
+| DA | Data Analyst - Geochemistry/Analytical Laboratory | Actlabs | Ancaster, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4476445964) |
+| DA | Senior Financial Analyst - 12 month contract | Vaco by Highspring | Greater Toronto Area, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489255292) |
+| DA | Senior Finance Specialist - 12 month contract | Vaco by Highspring | Greater Toronto Area, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4485745175) |
+| DA | Revenue & Data Specialist | SOCAN | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 | 加分 | [打开](https://www.linkedin.com/jobs/view/4489051859) |
+| DA | Senior Analyst, Data Engineering | Avanade | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4472643869) |
+| DA | Analyst - Financial | Holman | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4482148028) |
+| DA | Business Operations Analyst | AppLovin | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4482194874) |
+| DA | IT Business Analyst (Finance) | REDPATH MINING | Vaughan, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4321390138) |
+| DA | Quality Controls Lead (Data) | Dexian | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4488696917) |
+| DA | Business Analyst, Organizational Development & Transformation | OCAD University | Toronto, ON, Canada | Indeed | 2026-11-12 |  | [打开](https://ca.indeed.com/viewjob?jk=19edde501808156c) |
+| DA | Senior Business Analyst (Contract) – Data & Analytics | KRISSILAS GROUP INC | Toronto, ON, Canada | Indeed | 2026-11-12 |  | [打开](https://ca.indeed.com/viewjob?jk=37c71bb00d9a3bd8) |
+| DA | Vendor Analyst (12-Month Contract) | BGIS | Markham, ON, Canada | Indeed | 2026-11-12 | 加分 | [打开](https://ca.indeed.com/viewjob?jk=4c40b4a6b848788d) |
+| QA | Quality Assurance Automation Engineer | Kumaran Systems | Greater Toronto Area, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489253263) |
+| QA | QA - Data Reviewer, Associate | AtomVie Global Radiopharma Inc. | Hamilton, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4490356248) |
+| QA | RQ11688 – Systems Testing/QA Specialist – Senior | S M Software Solutions Inc | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4490356076) |
+| QA | Quality Coordinator | AtkinsRéalis | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4488477403) |
+| QA | Lead Quality Assurance Developer | OpenText | Richmond Hill, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4479468062) |
+| QA | AML/ATF Quality Control Specialist | Meridian Credit Union | Etobicoke, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4464647886) |
+| QA | Senior Analyst, QC Compliance (Microbiology) | Resilience | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4471976424) |
+| QA | Lead Quality Assurance Developer | OpenText | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4479462499) |
+| QA | Senior Software Engineer | Virtusa | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4484369718) |
+| QA | Student Intern, Supplier Quality | Celestica | Newmarket, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4481170184) |
+| QA | CQV Specialist/Metrologist | AtomVie Global Radiopharma Inc. | Hamilton, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4490341884) |
+| QA | Intern, CRM Implementation Analyst | Saputo Inc. | Mississauga, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4490052363) |
+| QA | Customer Quality Engineer | Magna International | Newmarket, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4490049892) |
+| QA | QE LEAD / SDET | Lorven Technologies Inc. | Toronto, Ontario, Canada | LinkedIn | 2026-11-12 |  | [打开](https://www.linkedin.com/jobs/view/4489260224) |
+| QA | Salesforce Quality Analyst Tester | OSI Digital | Toronto, ON, Canada | Indeed | 2026-11-12 |  | [打开](https://ca.indeed.com/viewjob?jk=c6ee348435d71d20) |
+| QA | Quality Assurance Analyst | Richardson Wealth | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4471929966) |
+| QA | Senior Agile Analyst | Co-operators Assurance et services financiers | Burlington, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489001979) |
+| QA | Senior Agile Analyst | Co-operators | Burlington, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489992057) |
+| QA | QA Analyst - SAP Payroll | FP Inc. | Scarborough, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4490009572) |
+| QA | ETL Quality Analyst | Insight Global | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489049120) |
+| QA | QE Lead | UST | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4488251907) |
+| QA | Business Systems Analyst | SearchLabs | Markham, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4490046158) |
+| QA | Quality Assurance Engineer | Flexstaf I.T. Inc. | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489056082) |
+| QA | Automation Developer – Intermediate | Bevertec | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489992766) |
+| QA | Quality Assurance Tester | Insight Global | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4489045434) |
+| QA | Manual QA Analyst | Altis | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489018577) |
+| DA | Data Analyst | Rates.ca | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489013104) |
+| DA | Sr. Marketing Data Analyst (Marketing Analytics & Insights) | Lenovo | Markham, Ontario, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4489019947) |
+| DA | Senior Analyst, Analytics & Insights | Klick | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489044076) |
+| DA | Senior Business Intelligence and Reporting Analyst | TD | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4481792313) |
+| DA | Financial Analyst Real Estate Analytics & Anaplan | Manulife | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4489023837) |
+| DA | Senior Specialist, Pension Data | University Pension Plan Ontario | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4480747370) |
+| DA | Retail Sales Analyst | Options Consulting Solutions | Brampton, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488697750) |
+| DA | Business Insights Developer | Cencora | Oakville, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4483092475) |
+| DA | ST-Analyst, Global Transportation | Apotex Inc. | North York, Ontario, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4490000171) |
+| DA | Pricing Analyst | Bunzl Canada | Burlington, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489022039) |
+| DA | Information Security Specialist (Vulnerability Management Data Insights & Reporting ) | TD | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4481792314) |
+| DA | Sr Consultant, Analytics Consulting | TransUnion | Burlington, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4471967100) |
+| DA | Online Assortment Analyst | Canadian Tire Corporation | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489989763) |
+| DA | Data & Pricing Analyst | RevWhisper | Hamilton, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489007563) |
+| DA | Student Intern, Analytics Centre of Excellence | Celestica | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489018498) |
+| DA | Data Scientist, Decisions - Mapping | Lyft | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4473569226) |
+| DA | Demand Planning Analyst | FGF Brands | Greater Toronto Area, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489995085) |
+| DA | Manager, Finance Data Analytics & Insights | Ontario Teachers' Pension Plan | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4490044649) |
+| DA | Intermediate Data Support Analyst (18-month contract) | AGF Investments | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4481811553) |
+| DA | Analyst, Enterprise IT VMO | McKesson | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4473288532) |
+| DA | Data Analyst, Business Intelligence (BI) | University of Toronto | Toronto, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=8bf06fd2bbb4d971) |
+| DA | Intern, Trade Promotion Management Business and Data Analyst | Saputo | Georgetown, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=7e00098caedd46e3) |
+| DA | Sr. Marketing Data Analyst (Marketing Analytics & Insights) | Lenovo | Markham, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=95f4cab2fa0d4667) |
+| DA | Business Analyst, Supply Chain Automation & Asset Mgmt | Canadian Tire Corporation, Ltd. | Brampton, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=6973713daf3798a1) |
+| DA | Pricing Analyst | Bunzl Canada Inc. | Burlington, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=4751c7a5b2f75946) |
+| DA | Online Assortment Analyst | Canadian Tire Corporation, Ltd. | Toronto, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=7bcc404c1c337465) |
+| DA | Senior Analyst, Analytics & Insights | Klick Health | Toronto, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=e437f028e24bf325) |
+| DA | Business Systems Analyst, Clinical Informatics | Michael Garron Hospital | Toronto, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=6b235417cc8e914f) |
+| DA | Intern, CRM Implementation Analyst | Saputo | Georgetown, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=ac921cbd9d970963) |
+| DA | Senior Analyst, QC Compliance (Chemistry) | Resilience | Mississauga, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=69b2d370d7453cee) |
+| DA | Business Readiness Analyst | IFDS Group | Toronto, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=a4826fb47a90e2dc) |
+| DA | Senior Analyst, QC Compliance (Microbiology) | Resilience | Mississauga, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=74181614f5a70f06) |
+| DA | ST-Analyst, Global Transportation | Apotex | North York, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=6dfd95cdb9e4ba80) |
+| DA | Q2C Senior Business Analyst | Salesforce | Toronto, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=b9c71013807f041a) |
+| DA | Senior Business Systems Analyst (TMS) | Metro Supply Chain | Mississauga, ON, Canada | Indeed | 2026-11-11 |  | [打开](https://ca.indeed.com/viewjob?jk=18d6632ec4479ed5) |
+| QA | Senior Agile Analyst | Co-operators Assurance et services financiers | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489021288) |
+| QA | Senior Agile Analyst | Co-operators | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489980373) |
+| QA | Quality Assurance Specialist/Engineer | AtkinsRéalis | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4490001874) |
+| QA | QA | Virtusa | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4488256577) |
+| QA | Technical Specialist, Connected Vehicle Quality | Vertage | Oakville, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489008836) |
+| QA | Senior Specialist, Quality Computer Validation (18 month contract) | McKesson | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 | 加分 | [打开](https://www.linkedin.com/jobs/view/4473274893) |
+| QA | Sr. Analyst, Quality Assurance General Merchandise | Restaurant Brands International | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4482022095) |
+| QA | Advisor, Quality Control (12 Month Contract) | Metrolinx | Greater Toronto Area, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489031019) |
+| QA | QA Analyst - SAP Payroll | FP Inc. | Scarborough, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4490007495) |
+| QA | Senior Quality Engineer | Linamar Corporation | Guelph, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489060025) |
+| QA | Supplier Quality Engineer Instrumentation & Controls | Arabelle Solutions | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4414338372) |
+| QA | Project Manager - Derivatives Testing & Migration | Robertson & Company Ltd. | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4471533145) |
+| QA | Sr Performance Test Engineer- LoadRunner, API & BrowserStack Testing | Nexvant Solutions | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489021059) |
+| QA | Safety and Mission Assurance (S&MA) Engineer | MDA Space | Brampton, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489027150) |
+| QA | Quality Engineer | Pangeo Group | Vaughan, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489023941) |
+| QA | Intern, CRM Implementation Analyst | Saputo Inc. | Georgetown, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4490046526) |
+| QA | Senior Analyst, QC Compliance (Chemistry) | Resilience | Mississauga, Ontario, Canada | LinkedIn | 2026-11-11 | 无描述 | [打开](https://www.linkedin.com/jobs/view/4489019961) |
+| QA | Senior IT Business Analyst (Insurance) | Marsh Agency | Toronto, Ontario, Canada | LinkedIn | 2026-11-11 | 加分 | [打开](https://www.linkedin.com/jobs/view/4489999661) |
+| QA | Senior Performance Test Lead / Specialist | N2P Systems | North York, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489048426) |
+| QA | Failure Analysis Technician - Customer Returns | EvertzAV | Burlington, Ontario, Canada | LinkedIn | 2026-11-11 |  | [打开](https://www.linkedin.com/jobs/view/4489994061) |
 
 ---
 
 每天的完整列表在 [data](data/) 文件夹里，最新一份是 [data/latest.csv](data/latest.csv)。
 
-更新时间：2026-11-11 09:34（多伦多时间）
+更新时间：2026-11-12 10:27（多伦多时间）
